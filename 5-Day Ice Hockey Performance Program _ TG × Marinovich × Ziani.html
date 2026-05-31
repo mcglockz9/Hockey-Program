@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<!-- saved from url=(0236)file:///Users/hocke/Library/Application%20Support/Claude/local-agent-mode-sessions/8ba487f0-959b-4226-81ad-aea352b6edba/88bbf057-e2df-4869-98d6-58f8a354a029/local_dc77769b-a0fe-45f1-bf4a-9476f7e738ff/outputs/Hockey_Program_Complete.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5-Day Ice Hockey Performance Program | TG × Marinovich × Ziani</title>
+<style>
+:root {
+  --bg: #060b17;
+  --surface: #0a1020;
+  --card: #101828;
+  --border: #1a2e4a;
+  --accent: #00c8ff;
+  --accent2: #ff6b00;
+  --green: #00d9a3;
+  --purple: #c084fc;
+  --text: #e2eaf5;
+  --muted: #6b7fa3;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
+
+/* ── HERO ── */
+.hero {
+  background: linear-gradient(160deg, #060b17 0%, #0a1a35 55%, #060b17 100%);
+  padding: 64px 32px 52px;
+  text-align: center;
+  border-bottom: 2px solid var(--accent);
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(0,200,255,0.08), transparent);
+  pointer-events: none;
+}
+.hero h1 { font-size: clamp(1.6rem,4vw,2.6rem); font-weight: 900; color: var(--accent); letter-spacing: -0.5px; margin-bottom: 6px; }
+.hero .sub { font-size: 1rem; color: var(--muted); margin-bottom: 32px; }
+.coaches { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+.coach { background: rgba(255,255,255,0.04); border: 1px solid var(--border); border-radius: 10px; padding: 12px 22px; }
+.coach .cn { font-weight: 700; color: var(--accent); font-size: 0.9rem; }
+.coach .cr { font-size: 0.75rem; color: var(--muted); margin-top: 2px; }
+
+/* ── LAYOUT ── */
+.container { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+section { padding: 56px 0; border-bottom: 1px solid var(--border); }
+h2.st { font-size: 1.6rem; color: var(--accent); margin-bottom: 6px; }
+.sd { color: var(--muted); margin-bottom: 32px; font-size: 0.93rem; }
+
+/* ── WEEKLY TABLE ── */
+.wtbl { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+.wtbl th { background: var(--border); color: var(--accent); padding: 11px 14px; text-align: left; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 1px; }
+.wtbl td { padding: 13px 14px; border-bottom: 1px solid var(--border); }
+.wtbl tr:hover td { background: rgba(255,255,255,0.02); }
+.dn { font-weight: 800; color: var(--accent); }
+.tag { display: inline-block; padding: 2px 9px; border-radius: 20px; font-size: 0.72rem; font-weight: 700; }
+.tp  { background: rgba(0,200,255,0.12); color: var(--accent); }
+.ts  { background: rgba(255,107,0,0.12);  color: var(--accent2); }
+.tr  { background: rgba(0,217,163,0.12);  color: var(--green); }
+.tc  { background: rgba(192,132,252,0.12); color: var(--purple); }
+
+/* ── POSTURE GRID ── */
+.pgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 20px; }
+.pcard { background: var(--card); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
+.pcard .svgw { background: var(--surface); padding: 16px; display: flex; justify-content: center; align-items: center; min-height: 200px; }
+.pcard .pi { padding: 18px 20px; }
+.pcard .pnum { font-size: 0.7rem; color: var(--accent); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 3px; }
+.pcard h3 { font-size: 1.05rem; margin-bottom: 8px; }
+.pcard .pdesc { font-size: 0.83rem; color: var(--muted); margin-bottom: 10px; }
+.pcard ul { list-style: none; margin-bottom: 10px; }
+.pcard ul li { font-size: 0.8rem; padding: 2px 0; }
+.pcard ul li::before { content: "→ "; color: var(--accent); }
+.dur { font-size: 0.78rem; color: var(--accent2); font-weight: 600; }
+
+/* ── EXERCISE DIAGRAM GRID ── */
+.edigrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 18px; }
+.edcard { background: var(--card); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+.edcard .svga { background: var(--surface); padding: 18px; display: flex; justify-content: center; min-height: 185px; align-items: center; }
+.edcard .edi { padding: 14px 16px; }
+.edcard h4 { font-size: 0.9rem; margin-bottom: 5px; }
+.edcard p { font-size: 0.78rem; color: var(--muted); }
+
+/* ── DAY CARDS ── */
+.dcard { background: var(--card); border: 1px solid var(--border); border-radius: 14px; margin-bottom: 28px; overflow: hidden; }
+.dhdr { padding: 22px 26px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 16px; }
+.dnb { width: 48px; height: 48px; border-radius: 50%; background: var(--accent); color: #000; font-weight: 900; font-size: 1rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.dhdr h3 { font-size: 1.1rem; margin-bottom: 3px; }
+.dhdr p { font-size: 0.8rem; color: var(--muted); }
+.dbody { padding: 20px 26px; }
+.plbl { font-size: 0.7rem; color: var(--accent); text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin: 20px 0 10px; }
+.plbl:first-child { margin-top: 0; }
+.exrow { display: flex; gap: 12px; padding: 11px 0; border-bottom: 1px solid rgba(255,255,255,0.04); align-items: flex-start; flex-wrap: wrap; }
+.exrow:last-child { border-bottom: none; }
+.exn { font-weight: 600; min-width: 210px; font-size: 0.88rem; }
+.exs { color: var(--accent); font-weight: 700; min-width: 110px; font-size: 0.82rem; }
+.exd { color: var(--muted); font-size: 0.8rem; flex: 1; }
+.cb { background: rgba(255,107,0,0.13); color: var(--accent2); font-size: 0.65rem; font-weight: 700; padding: 1px 7px; border-radius: 8px; margin-left: 6px; white-space: nowrap; }
+.nb { background: rgba(0,200,255,0.1); color: var(--accent); font-size: 0.65rem; font-weight: 700; padding: 1px 7px; border-radius: 8px; margin-left: 6px; white-space: nowrap; }
+.zb { background: rgba(0,217,163,0.1); color: var(--green); font-size: 0.65rem; font-weight: 700; padding: 1px 7px; border-radius: 8px; margin-left: 6px; white-space: nowrap; }
+
+/* ── PROGRESSION TABLE ── */
+.ptbl { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+.ptbl th { background: var(--border); color: var(--accent); padding: 11px 14px; text-align: left; font-size: 0.78rem; text-transform: uppercase; }
+.ptbl td { padding: 13px 14px; border-bottom: 1px solid var(--border); }
+.ptbl tr:nth-child(4) td { color: var(--green); }
+
+footer { text-align: center; padding: 44px 24px; color: var(--muted); font-size: 0.8rem; line-height: 1.8; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════ HERO -->
+<div class="hero">
+  <h1>5-DAY ICE HOCKEY PERFORMANCE PROGRAM</h1>
+  <div class="sub">Three elite training systems unified for total athlete development</div>
+  <div class="coaches">
+    <div class="coach"><div class="cn">Tony Greco · TG Method</div><div class="cr">Hockey-Specific Functional Power &amp; Conditioning</div></div>
+    <div class="coach"><div class="cn">Marv Marinovich</div><div class="cr">Neuromuscular &amp; CNS Performance System</div></div>
+    <div class="coach"><div class="cn">Kadour Ziani</div><div class="cr">7 Postures · Unlocking Mobility</div></div>
+  </div>
+</div>
+
+<div class="container">
+
+<!-- ═══════════════════════════════════════════════════ OVERVIEW -->
+<section>
+  <h2 class="st">Weekly Structure</h2>
+  <p class="sd">CNS load, recovery, and hockey-specific adaptation balanced across the week. Ziani postures are assigned per day — full sequence on Day 3.</p>
+  <table class="wtbl">
+    <thead><tr><th>Day</th><th>Focus</th><th>System</th><th>Ziani Postures</th></tr></thead>
+    <tbody>
+      <tr><td class="dn">Day 1</td><td>Lower Body Power + Neuromuscular Foundation</td><td><span class="tag tp">CNS / Strength-Power</span></td><td>Frog + Pigeon (passive, after)</td></tr>
+      <tr><td class="dn">Day 2</td><td>Upper Body Strength + Rotational Power</td><td><span class="tag ts">Strength / Force</span></td><td>Grasshopper + Pigeon (passive, after)</td></tr>
+      <tr><td class="dn">Day 3</td><td>CNS Recovery + Movement Quality</td><td><span class="tag tr">Parasympathetic Reset</span></td><td>All 7 — Full Sequence in Order</td></tr>
+      <tr><td class="dn">Day 4</td><td>Total Body Athletic Power — Contrast Method</td><td><span class="tag tp">Power / RFD</span></td><td>Cat + Camel + Gorilla (active, before)</td></tr>
+      <tr><td class="dn">Day 5</td><td>Hockey Metabolic Conditioning + Agility</td><td><span class="tag tc">Anaerobic / Reactive</span></td><td>Cow + Frog + Grasshopper (active, before) · Pigeon (passive, after)</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ ZIANI 7 POSTURES -->
+<section id="ziani">
+  <h2 class="st">Kadour Ziani · 7 Unlocking Postures</h2>
+  <p class="sd">From <em>Unlock Mobility — 7 Postures</em> by Kadour Ziani. Always barefoot. Always in order — each posture prepares the next. Micro-dose protocol: <strong>10 sec × 3</strong> for passive holds · <strong>3 × 10 reps</strong> for active/dynamic. Pain must not exceed 3–4/10. Active/Dynamic versions BEFORE exertion (warm-up); Passive/Static AFTER exertion (cool-down). The big toe is the common foundation of all 7. Full sequence on Day 3; select postures integrated on all other days.</p>
+  <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px;">
+    <span style="background:rgba(0,200,255,0.1);color:var(--accent);padding:5px 14px;border-radius:20px;font-size:0.78rem;font-weight:700;">5 FOUNDERS: Cat · Cow · Camel · Grasshopper · Pigeon</span>
+    <span style="background:rgba(255,107,0,0.1);color:var(--accent2);padding:5px 14px;border-radius:20px;font-size:0.78rem;font-weight:700;">2 CHALLENGES: Frog · Gorilla</span>
+  </div>
+
+  <div class="pgrid">
+
+    <!-- ── POSTURE 1: THE CAT ── -->
+    <div class="pcard">
+      <div class="svgw">
+        <svg viewBox="0 0 240 210" width="210" height="195" xmlns="http://www.w3.org/2000/svg">
+          <!-- Side-lying: person on their side, knee drawn up to chest -->
+          <line x1="15" y1="195" x2="225" y2="195" stroke="#1a2e4a" stroke-width="2"></line>
+          <!-- Floor line showing person lying on side -->
+          <line x1="30" y1="155" x2="210" y2="155" stroke="#1a2e4a" stroke-width="1.5" stroke-dasharray="4,4"></line>
+          <!-- Head (lying) -->
+          <circle cx="200" cy="135" r="14" fill="none" stroke="#00c8ff" stroke-width="2.5"></circle>
+          <!-- Spine horizontal -->
+          <line x1="186" y1="135" x2="140" y2="138" stroke="#00c8ff" stroke-width="2.5"></line>
+          <line x1="140" y1="138" x2="100" y2="142" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Hips -->
+          <circle cx="100" cy="142" r="5" fill="#ff6b00"></circle>
+          <!-- Bottom leg extended slightly -->
+          <line x1="100" y1="142" x2="60" y2="150" stroke="#00c8ff" stroke-width="2.5"></line>
+          <circle cx="60" cy="150" r="4" fill="#ff6b00"></circle>
+          <line x1="60" y1="150" x2="35" y2="155" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Top leg: knee bent, drawn up to chest (held in crook of arm) -->
+          <line x1="100" y1="142" x2="86" y2="100" stroke="#00c8ff" stroke-width="2.5"></line>
+          <circle cx="86" cy="100" r="4" fill="#ff6b00"></circle>
+          <!-- Shin with heel toward butt -->
+          <line x1="86" y1="100" x2="106" y2="75" stroke="#00c8ff" stroke-width="2.5"></line>
+          <circle cx="106" cy="75" r="4" fill="#00c8ff"></circle>
+          <!-- Upper arm holding knee (forearm cradle) -->
+          <line x1="140" y1="115" x2="110" y2="100" stroke="#00c8ff" stroke-width="2"></line>
+          <line x1="110" y1="100" x2="86" y2="100" stroke="#00c8ff" stroke-width="2"></line>
+          <!-- Lower arm reaching to grab toes -->
+          <line x1="140" y1="155" x2="118" y2="130" stroke="#00c8ff" stroke-width="2"></line>
+          <line x1="118" y1="130" x2="106" y2="75" stroke="#00c8ff" stroke-width="1.5" stroke-dasharray="4,3"></line>
+          <!-- Label -->
+          <text x="118" y="205" text-anchor="middle" fill="#6b7fa3" font-size="9" font-family="sans-serif">Side-lying · Knee to chest · Grab toes</text>
+        </svg>
+      </div>
+      <div class="pi">
+        <div class="pnum">Posture 1 · FOUNDER</div>
+        <h3>The Cat <span style="color:var(--muted);font-size:0.8rem;font-weight:400">— Body Awakening</span></h3>
+        <p class="pdesc">"Mother of postures." Awakens and lubricates all basic joints of the musculoskeletal system. Opens every session.</p>
+        <ul>
+          <li><strong>Passive:</strong> Lie on side. Take knee in hollow of forearm, lift bent leg to chest. With other hand, grab all toes and bend toward you. Heel stays close to butt.</li>
+          <li><strong>Active (standing):</strong> Place foot on box at knee height. Add kettlebell, perform split squat on standing leg.</li>
+          <li>Alternate: Seated on floor with foot lifted; or standing with foot on chair.</li>
+        </ul>
+        <div class="dur">⏱ Passive: 10 sec × 3 each side · Active: 3 × 10 reps · BEFORE training</div>
+      </div>
+    </div>
+
+    <!-- ── POSTURE 2: THE COW ── -->
+    <div class="pcard">
+      <div class="svgw">
+        <svg viewBox="0 0 220 210" width="210" height="195" xmlns="http://www.w3.org/2000/svg">
+          <line x1="15" y1="195" x2="205" y2="195" stroke="#1a2e4a" stroke-width="2"></line>
+          <!-- Seated: buttocks between heels, heels flared wide, upright torso -->
+          <!-- Head -->
+          <circle cx="110" cy="36" r="14" fill="none" stroke="#00c8ff" stroke-width="2.5"></circle>
+          <!-- Neck + tall spine -->
+          <line x1="110" y1="50" x2="110" y2="76" stroke="#00c8ff" stroke-width="2.5"></line>
+          <line x1="110" y1="76" x2="110" y2="108" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Shoulders -->
+          <line x1="80" y1="68" x2="140" y2="68" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Arms: fists on ground in front, thumbs out -->
+          <line x1="80" y1="68" x2="68" y2="100" stroke="#00c8ff" stroke-width="2"></line>
+          <line x1="68" y1="100" x2="62" y2="130" stroke="#00c8ff" stroke-width="2"></line>
+          <rect x="54" y="128" width="12" height="10" rx="3" fill="#1a2e4a" stroke="#ff6b00" stroke-width="1.5"></rect>
+          <!-- Thumb extended outward left -->
+          <line x1="54" y1="132" x2="44" y2="126" stroke="#ff6b00" stroke-width="2"></line>
+          <line x1="140" y1="68" x2="152" y2="100" stroke="#00c8ff" stroke-width="2"></line>
+          <line x1="152" y1="100" x2="158" y2="130" stroke="#00c8ff" stroke-width="2"></line>
+          <rect x="158" y="128" width="12" height="10" rx="3" fill="#1a2e4a" stroke="#ff6b00" stroke-width="1.5"></rect>
+          <!-- Thumb extended outward right -->
+          <line x1="170" y1="132" x2="180" y2="126" stroke="#ff6b00" stroke-width="2"></line>
+          <!-- Hips - sitting between heels (buttocks LOW) -->
+          <circle cx="110" cy="108" r="5" fill="#ff6b00"></circle>
+          <!-- Thighs pointing down/back (axial alignment) -->
+          <line x1="110" y1="108" x2="75" y2="138" stroke="#00c8ff" stroke-width="2.5"></line>
+          <circle cx="75" cy="138" r="4" fill="#ff6b00"></circle>
+          <line x1="110" y1="108" x2="145" y2="138" stroke="#00c8ff" stroke-width="2.5"></line>
+          <circle cx="145" cy="138" r="4" fill="#ff6b00"></circle>
+          <!-- Heels flared wide, shins on ground -->
+          <line x1="75" y1="138" x2="52" y2="168" stroke="#00c8ff" stroke-width="2.5"></line>
+          <line x1="52" y1="168" x2="42" y2="190" stroke="#00c8ff" stroke-width="2.5"></line>
+          <line x1="145" y1="138" x2="168" y2="168" stroke="#00c8ff" stroke-width="2.5"></line>
+          <line x1="168" y1="168" x2="178" y2="190" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Buttocks sits between heels (shown as dot between feet) -->
+          <circle cx="110" cy="175" r="6" fill="#1a2e4a" stroke="#00d9a3" stroke-width="1.5"></circle>
+          <text x="110" y="205" text-anchor="middle" fill="#6b7fa3" font-size="9" font-family="sans-serif">Buttocks between heels · Heels flare wide · Spine tall</text>
+        </svg>
+      </div>
+      <div class="pi">
+        <div class="pnum">Posture 2 · FOUNDER</div>
+        <h3>The Cow <span style="color:var(--muted);font-size:0.8rem;font-weight:400">— Humility Check Up</span></h3>
+        <p class="pdesc">Seated between flared heels — NOT on heels. Axial alignment of thighs. Seen in seiza (Japan), Berber prayer, and Asian deep squat cultures.</p>
+        <ul>
+          <li><strong>Passive:</strong> Sit on ground with buttocks between heels (heels open wide outward creating a hollow). Fists on ground in front, thumbs extended outward. Spine tall.</li>
+          <li><strong>Active:</strong> Lean to one side, opposite hand holds weight. 10 sec × 3 each side.</li>
+          <li><strong>Dynamic:</strong> Push-ups from fist position. 10 reps × 3.</li>
+        </ul>
+        <div class="dur">⏱ Passive: 10 sec × 3 · Active: 3 × 10 reps · BEFORE training</div>
+      </div>
+    </div>
+
+    <!-- ── POSTURE 3: THE FROG (CHALLENGE) ── -->
+    <div class="pcard" style="border-color:rgba(255,107,0,0.4);">
+      <div class="svgw">
+        <svg viewBox="0 0 220 210" width="210" height="195" xmlns="http://www.w3.org/2000/svg">
+          <line x1="15" y1="195" x2="205" y2="195" stroke="#1a2e4a" stroke-width="2"></line>
+          <!-- CHALLENGE badge -->
+          <rect x="140" y="8" width="68" height="18" rx="9" fill="rgba(255,107,0,0.2)"></rect>
+          <text x="174" y="21" text-anchor="middle" fill="#ff6b00" font-size="9" font-weight="bold" font-family="sans-serif">CHALLENGE</text>
+          <!-- Standing deep squat, heels FLAT, arms in front -->
+          <!-- Head -->
+          <circle cx="110" cy="50" r="14" fill="none" stroke="#00c8ff" stroke-width="2.5"></circle>
+          <!-- Spine (slight forward lean, tucked in deep squat) -->
+          <line x1="110" y1="64" x2="108" y2="90" stroke="#00c8ff" stroke-width="2.5"></line>
+          <line x1="108" y1="90" x2="106" y2="118" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Shoulders -->
+          <line x1="82" y1="82" x2="136" y2="82" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Arms: elbows pressed on knees, hands relaxed in front -->
+          <line x1="82" y1="82" x2="66" y2="110" stroke="#00c8ff" stroke-width="2"></line>
+          <line x1="66" y1="110" x2="60" y2="135" stroke="#00c8ff" stroke-width="2"></line>
+          <circle cx="60" cy="135" r="3" fill="#00c8ff"></circle>
+          <line x1="136" y1="82" x2="154" y2="110" stroke="#00c8ff" stroke-width="2"></line>
+          <line x1="154" y1="110" x2="160" y2="135" stroke="#00c8ff" stroke-width="2"></line>
+          <circle cx="160" cy="135" r="3" fill="#00c8ff"></circle>
+          <!-- Hip low (deep squat) -->
+          <circle cx="106" cy="118" r="5" fill="#ff6b00"></circle>
+          <!-- Knees wide, thighs proportional to shoulders -->
+          <line x1="106" y1="118" x2="68" y2="152" stroke="#00c8ff" stroke-width="2.5"></line>
+          <circle cx="68" cy="152" r="4" fill="#ff6b00"></circle>
+          <!-- Shins: heels FLAT on ground -->
+          <line x1="68" y1="152" x2="58" y2="190" stroke="#00c8ff" stroke-width="2.5"></line>
+          <line x1="106" y1="118" x2="148" y2="152" stroke="#00c8ff" stroke-width="2.5"></line>
+          <circle cx="148" cy="152" r="4" fill="#ff6b00"></circle>
+          <line x1="148" y1="152" x2="158" y2="190" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Feet flat indicators -->
+          <line x1="44" y1="190" x2="68" y2="190" stroke="#00d9a3" stroke-width="2.5"></line>
+          <line x1="148" y1="190" x2="172" y2="190" stroke="#00d9a3" stroke-width="2.5"></line>
+          <!-- Elbow on knee arrows -->
+          <line x1="66" y1="110" x2="68" y2="134" stroke="#ff6b00" stroke-width="1.5" stroke-dasharray="3,3"></line>
+          <line x1="154" y1="110" x2="148" y2="134" stroke="#ff6b00" stroke-width="1.5" stroke-dasharray="3,3"></line>
+          <text x="110" y="206" text-anchor="middle" fill="#00d9a3" font-size="9" font-family="sans-serif">Heels FLAT · Feet forward · Elbows on knees</text>
+        </svg>
+      </div>
+      <div class="pi">
+        <div class="pnum">Posture 3 · CHALLENGE</div>
+        <h3>The Frog <span style="color:var(--muted);font-size:0.8rem;font-weight:400">— Foetal Rebirth</span></h3>
+        <p class="pdesc">Most adults cannot do this — the first real test. Increases running speed, pushing force, vertical leap, and stride length.</p>
+        <ul>
+          <li><strong>Passive:</strong> Standing, feet pointing FORWARD, descend into complete deep squat with HEELS FLAT. Gap between legs proportional to shoulders. Apply armpits/elbows on roundness of knees. Arms relaxed in front.</li>
+          <li><strong>Active:</strong> Same position holding weights in each hand. 10 sec × 3.</li>
+          <li><strong>Dynamic:</strong> Deep squat up/down with weights. 10 reps × 3. Add ankle flexions between reps.</li>
+        </ul>
+        <div class="dur">⏱ Passive: 10 sec × 3 · Pain max 3–4/10 · AFTER training</div>
+      </div>
+    </div>
+
+    <!-- ── POSTURE 4: THE CAMEL ── -->
+    <div class="pcard">
+      <div class="svgw">
+        <svg viewBox="0 0 220 210" width="210" height="195" xmlns="http://www.w3.org/2000/svg">
+          <line x1="15" y1="195" x2="205" y2="195" stroke="#1a2e4a" stroke-width="2"></line>
+          <!-- Half COW + Half FROG: one leg bent back (like Cow), one foot flat on ground knee up -->
+          <!-- Head -->
+          <circle cx="110" cy="38" r="14" fill="none" stroke="#00c8ff" stroke-width="2.5"></circle>
+          <!-- Spine tall (neutral) -->
+          <line x1="110" y1="52" x2="110" y2="78" stroke="#00c8ff" stroke-width="2.5"></line>
+          <line x1="110" y1="78" x2="108" y2="108" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Shoulders -->
+          <line x1="80" y1="68" x2="140" y2="68" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Left arm: fist on ground -->
+          <line x1="80" y1="68" x2="68" y2="98" stroke="#00c8ff" stroke-width="2"></line>
+          <line x1="68" y1="98" x2="62" y2="128" stroke="#00c8ff" stroke-width="2"></line>
+          <rect x="54" y="126" width="12" height="10" rx="3" fill="#1a2e4a" stroke="#ff6b00" stroke-width="1.5"></rect>
+          <line x1="54" y1="130" x2="44" y2="124" stroke="#ff6b00" stroke-width="1.5"></line>
+          <!-- Right arm: holds knee of raised leg -->
+          <line x1="140" y1="68" x2="148" y2="92" stroke="#00c8ff" stroke-width="2"></line>
+          <line x1="148" y1="92" x2="140" y2="110" stroke="#00c8ff" stroke-width="2"></line>
+          <!-- Hips -->
+          <circle cx="108" cy="108" r="5" fill="#ff6b00"></circle>
+          <!-- LEFT leg: bent back like COW (shin on ground, sitting on it) -->
+          <line x1="108" y1="108" x2="75" y2="135" stroke="#00c8ff" stroke-width="2.5"></line>
+          <circle cx="75" cy="135" r="4" fill="#ff6b00"></circle>
+          <line x1="75" y1="135" x2="52" y2="162" stroke="#00c8ff" stroke-width="2.5"></line>
+          <line x1="52" y1="162" x2="42" y2="192" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- RIGHT leg: foot flat on ground, knee raised and pressed to chest/collarbone -->
+          <line x1="108" y1="108" x2="140" y2="128" stroke="#00c8ff" stroke-width="2.5"></line>
+          <circle cx="140" cy="128" r="4" fill="#ff6b00"></circle>
+          <line x1="140" y1="128" x2="148" y2="160" stroke="#00c8ff" stroke-width="2.5"></line>
+          <line x1="148" y1="160" x2="152" y2="192" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Knee pressing against chest arrow -->
+          <path d="M138,120 Q125,105 118,98" fill="none" stroke="#ff6b00" stroke-width="1.5" stroke-dasharray="3,3"></path>
+          <polygon points="118,98 120,107 126,103" fill="#ff6b00"></polygon>
+          <text x="108" y="206" text-anchor="middle" fill="#6b7fa3" font-size="9" font-family="sans-serif">Half Cow + Half Frog · Knee to collarbone</text>
+        </svg>
+      </div>
+      <div class="pi">
+        <div class="pnum">Posture 4 · FOUNDER</div>
+        <h3>The Camel <span style="color:var(--muted);font-size:0.8rem;font-weight:400">— Reload</span></h3>
+        <p class="pdesc">Ziani's favorite. Half COW + half FROG. The most versatile posture — bridges the two families.</p>
+        <ul>
+          <li><strong>Passive:</strong> Start from COW position. Place one fist on ground (thumb extended). With other hand, grab knee and raise it — bring foot flat on ground with knee pressed against collarbone/chest. Hold 10 sec × 3 each side.</li>
+          <li><strong>Active:</strong> Same position with weights hanging from hands.</li>
+          <li><strong>Dynamic:</strong> Single-leg squats (3 × 10) pushing with outer face of the ankle you were sitting on.</li>
+        </ul>
+        <div class="dur">⏱ Passive: 10 sec × 3 each side · Dynamic: 3 × 10 · BEFORE training</div>
+      </div>
+    </div>
+
+    <!-- ── POSTURE 5: THE GRASSHOPPER ── -->
+    <div class="pcard">
+      <div class="svgw">
+        <svg viewBox="0 0 220 210" width="210" height="195" xmlns="http://www.w3.org/2000/svg">
+          <line x1="15" y1="195" x2="205" y2="195" stroke="#1a2e4a" stroke-width="2"></line>
+          <!-- From COW base: foot lifted, arch on bent toes (extreme toe extension) -->
+          <!-- Head -->
+          <circle cx="110" cy="38" r="14" fill="none" stroke="#00c8ff" stroke-width="2.5"></circle>
+          <!-- Spine (slight forward lean in COW base) -->
+          <line x1="110" y1="52" x2="110" y2="78" stroke="#00c8ff" stroke-width="2.5"></line>
+          <line x1="110" y1="78" x2="108" y2="108" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Shoulders -->
+          <line x1="80" y1="68" x2="140" y2="68" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Left arm down (COW base) -->
+          <line x1="80" y1="68" x2="70" y2="100" stroke="#00c8ff" stroke-width="2"></line>
+          <line x1="70" y1="100" x2="65" y2="132" stroke="#00c8ff" stroke-width="2"></line>
+          <rect x="57" y="130" width="12" height="10" rx="3" fill="#1a2e4a" stroke="#ff6b00" stroke-width="1.5"></rect>
+          <!-- Right arm: holding shin at ankle (malleolus), lifting foot -->
+          <line x1="140" y1="68" x2="150" y2="92" stroke="#00c8ff" stroke-width="2"></line>
+          <line x1="150" y1="92" x2="156" y2="118" stroke="#00c8ff" stroke-width="2"></line>
+          <!-- Gripping ankle -->
+          <circle cx="156" cy="124" r="5" fill="none" stroke="#ff6b00" stroke-width="2"></circle>
+          <!-- Hips -->
+          <circle cx="108" cy="108" r="5" fill="#ff6b00"></circle>
+          <!-- Left leg: sitting in COW (shin on ground) -->
+          <line x1="108" y1="108" x2="75" y2="135" stroke="#00c8ff" stroke-width="2.5"></line>
+          <circle cx="75" cy="135" r="4" fill="#ff6b00"></circle>
+          <line x1="75" y1="135" x2="52" y2="165" stroke="#00c8ff" stroke-width="2.5"></line>
+          <line x1="52" y1="165" x2="42" y2="192" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Right leg: lifted and STRAIGHTENED, arch on bent toes -->
+          <line x1="108" y1="108" x2="140" y2="120" stroke="#00c8ff" stroke-width="2.5"></line>
+          <circle cx="140" cy="120" r="4" fill="#ff6b00"></circle>
+          <line x1="140" y1="120" x2="158" y2="120" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Foot: arch on extreme bent toes (big toe key) -->
+          <line x1="158" y1="120" x2="175" y2="118" stroke="#00c8ff" stroke-width="2"></line>
+          <!-- Bent toes (flexed upward toward knee) -->
+          <path d="M175,118 Q185,112 188,105" fill="none" stroke="#ff6b00" stroke-width="2.5"></path>
+          <circle cx="188" cy="105" r="4" fill="#ff6b00"></circle>
+          <!-- Big toe label -->
+          <text x="190" y="100" fill="#00d9a3" font-size="8" font-family="sans-serif">BIG TOE</text>
+          <!-- Arrow indicating toe bend -->
+          <path d="M172,113 Q176,106 181,104" fill="none" stroke="#00d9a3" stroke-width="1.5" stroke-dasharray="3,3"></path>
+          <text x="108" y="206" text-anchor="middle" fill="#6b7fa3" font-size="9" font-family="sans-serif">Foot straightened · Toes BENT toward knee · Big toe key</text>
+        </svg>
+      </div>
+      <div class="pi">
+        <div class="pnum">Posture 5 · FOUNDER</div>
+        <h3>The Grasshopper <span style="color:var(--muted);font-size:0.8rem;font-weight:400">— The Missing Link</span></h3>
+        <p class="pdesc">"Big toe is the governor of the body — a rudder from which movements are decided, engaged and oriented." The cornerstone of human mobility.</p>
+        <ul>
+          <li><strong>Passive:</strong> From COW position, grasp shin at malleolus (ankle bone). Lift foot up so leg straightens. The arch rests on FIVE TOES bent toward the knees (extreme toe extension). Hold 10 sec × 3 each side.</li>
+          <li><strong>Active:</strong> Apply palm against heel of upright foot; or hold weight above thigh; or lean forward pressing shoulder on knee.</li>
+          <li><strong>Dynamic:</strong> Front-and-back swings from foot to bent toes; or rise on knees and sit on ankle.</li>
+          <li>Cultural reference: Islamic tashahoud seated prayer position.</li>
+        </ul>
+        <div class="dur">⏱ Passive: 10 sec × 3 each side · Dynamic: 3 × 10 · BEFORE training</div>
+      </div>
+    </div>
+
+    <!-- ── POSTURE 6: THE PIGEON ── -->
+    <div class="pcard">
+      <div class="svgw">
+        <svg viewBox="0 0 240 210" width="210" height="195" xmlns="http://www.w3.org/2000/svg">
+          <line x1="15" y1="195" x2="225" y2="195" stroke="#1a2e4a" stroke-width="2"></line>
+          <!-- From Grasshopper base: slide foot along opposite thigh, creating a triangle -->
+          <!-- Head -->
+          <circle cx="110" cy="36" r="14" fill="none" stroke="#00c8ff" stroke-width="2.5"></circle>
+          <line x1="110" y1="50" x2="110" y2="76" stroke="#00c8ff" stroke-width="2.5"></line>
+          <line x1="110" y1="76" x2="108" y2="106" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Shoulders -->
+          <line x1="80" y1="66" x2="140" y2="66" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Left arm: fist on ground (thumb out) -->
+          <line x1="80" y1="66" x2="70" y2="96" stroke="#00c8ff" stroke-width="2"></line>
+          <line x1="70" y1="96" x2="65" y2="130" stroke="#00c8ff" stroke-width="2"></line>
+          <rect x="57" y="128" width="12" height="10" rx="3" fill="#1a2e4a" stroke="#ff6b00" stroke-width="1.5"></rect>
+          <line x1="57" y1="132" x2="47" y2="126" stroke="#ff6b00" stroke-width="1.5"></line>
+          <!-- Right arm: hands on thighs -->
+          <line x1="140" y1="66" x2="150" y2="92" stroke="#00c8ff" stroke-width="2"></line>
+          <line x1="150" y1="92" x2="145" y2="115" stroke="#00c8ff" stroke-width="2"></line>
+          <circle cx="145" cy="115" r="3" fill="#00c8ff"></circle>
+          <!-- Hips -->
+          <circle cx="108" cy="106" r="5" fill="#ff6b00"></circle>
+          <!-- LEFT leg: forming the base triangle. Foot slid along opposite thigh to knee edge. -->
+          <line x1="108" y1="106" x2="75" y2="132" stroke="#00c8ff" stroke-width="2.5"></line>
+          <circle cx="75" cy="132" r="4" fill="#ff6b00"></circle>
+          <line x1="75" y1="132" x2="52" y2="160" stroke="#00c8ff" stroke-width="2.5"></line>
+          <line x1="52" y1="160" x2="42" y2="190" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- RIGHT leg: thigh extended sideways, foot slides to edge of opposite knee — TRIANGLE -->
+          <line x1="108" y1="106" x2="158" y2="120" stroke="#00c8ff" stroke-width="2.5"></line>
+          <circle cx="158" cy="120" r="4" fill="#ff6b00"></circle>
+          <line x1="158" y1="120" x2="185" y2="140" stroke="#00c8ff" stroke-width="2.5"></line>
+          <circle cx="185" cy="140" r="4" fill="#ff6b00"></circle>
+          <!-- Foot reaches to knee of other leg (triangle) -->
+          <line x1="185" y1="140" x2="75" y2="132" stroke="#00d9a3" stroke-width="1.5" stroke-dasharray="4,3"></line>
+          <!-- Triangle label -->
+          <text x="128" y="125" fill="#00d9a3" font-size="8" font-family="sans-serif">△ TRIANGLE</text>
+          <!-- Rotation indicator (first rotary posture) -->
+          <path d="M118,96 Q130,88 140,92" fill="none" stroke="#ff6b00" stroke-width="1.5" stroke-dasharray="3,3"></path>
+          <polygon points="140,92 133,89 135,96" fill="#ff6b00"></polygon>
+          <text x="118" y="206" text-anchor="middle" fill="#6b7fa3" font-size="9" font-family="sans-serif">Foot slides to knee edge · Leg forms triangle · Rotate</text>
+        </svg>
+      </div>
+      <div class="pi">
+        <div class="pnum">Posture 6 · FOUNDER</div>
+        <h3>The Pigeon <span style="color:var(--muted);font-size:0.8rem;font-weight:400">— The Virtuous Triangle</span></h3>
+        <p class="pdesc">FIRST posture with ROTARY/circular movements (all previous are linear). Crucial for pelvis opening and hip release. Weights mandatory for active version.</p>
+        <ul>
+          <li><strong>Passive:</strong> From Grasshopper base, lean on fist (thumb extended), lift buttocks, slide foot along opposite thigh until toes reach edge of the opposite knee — creating a TRIANGLE with the leg. Sit down. Hands on thighs. Hold 10 sec × 3 each side.</li>
+          <li><strong>Variations:</strong> (a) Small trunk rotation toward triangle thigh, lower trunk onto thigh. (b) Tilt trunk to side, place shoulder on knee.</li>
+          <li><strong>Active:</strong> Same positions with weights — WEIGHTS MANDATORY.</li>
+          <li><strong>Dynamic:</strong> Ascent/descent movements from base variations.</li>
+        </ul>
+        <div class="dur">⏱ Passive: 10 sec × 3 each side · AFTER training (rotary — static)</div>
+      </div>
+    </div>
+
+    <!-- ── POSTURE 7: THE GORILLA (MASTERY) ── -->
+    <div class="pcard" style="border-color:rgba(255,107,0,0.4);">
+      <div class="svgw">
+        <svg viewBox="0 0 220 210" width="210" height="195" xmlns="http://www.w3.org/2000/svg">
+          <line x1="15" y1="195" x2="205" y2="195" stroke="#1a2e4a" stroke-width="2"></line>
+          <!-- CHALLENGE badge -->
+          <rect x="132" y="8" width="76" height="18" rx="9" fill="rgba(255,107,0,0.2)"></rect>
+          <text x="170" y="21" text-anchor="middle" fill="#ff6b00" font-size="9" font-weight="bold" font-family="sans-serif">MASTERY</text>
+          <!-- Builds on Pigeon: both fists on ground, raised up on fists -->
+          <!-- Head (leaning forward slightly) -->
+          <circle cx="110" cy="40" r="14" fill="none" stroke="#00c8ff" stroke-width="2.5"></circle>
+          <!-- Spine: forward lean, raised on fists -->
+          <line x1="110" y1="54" x2="107" y2="80" stroke="#00c8ff" stroke-width="2.5"></line>
+          <line x1="107" y1="80" x2="104" y2="108" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Shoulders -->
+          <line x1="78" y1="70" x2="138" y2="70" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- LEFT arm: fist on ground, raised -->
+          <line x1="78" y1="70" x2="62" y2="100" stroke="#00c8ff" stroke-width="2.5"></line>
+          <line x1="62" y1="100" x2="55" y2="132" stroke="#00c8ff" stroke-width="2.5"></line>
+          <rect x="46" y="130" width="14" height="12" rx="3" fill="#1a2e4a" stroke="#ff6b00" stroke-width="2"></rect>
+          <!-- Thumb left -->
+          <line x1="46" y1="135" x2="36" y2="128" stroke="#ff6b00" stroke-width="2"></line>
+          <!-- RIGHT arm: second fist on ground (between legs) -->
+          <line x1="138" y1="70" x2="152" y2="100" stroke="#00c8ff" stroke-width="2.5"></line>
+          <line x1="152" y1="100" x2="158" y2="132" stroke="#00c8ff" stroke-width="2.5"></line>
+          <rect x="154" y="130" width="14" height="12" rx="3" fill="#1a2e4a" stroke="#ff6b00" stroke-width="2"></rect>
+          <!-- Thumb right -->
+          <line x1="168" y1="135" x2="178" y2="128" stroke="#ff6b00" stroke-width="2"></line>
+          <!-- Hips raised above ground -->
+          <circle cx="104" cy="108" r="5" fill="#ff6b00"></circle>
+          <!-- LEFT leg: Pigeon triangle base -->
+          <line x1="104" y1="108" x2="68" y2="135" stroke="#00c8ff" stroke-width="2.5"></line>
+          <circle cx="68" cy="135" r="4" fill="#ff6b00"></circle>
+          <line x1="68" y1="135" x2="46" y2="165" stroke="#00c8ff" stroke-width="2.5"></line>
+          <line x1="46" y1="165" x2="38" y2="192" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- RIGHT leg: triangle -->
+          <line x1="104" y1="108" x2="152" y2="125" stroke="#00c8ff" stroke-width="2.5"></line>
+          <circle cx="152" cy="125" r="4" fill="#ff6b00"></circle>
+          <line x1="152" y1="125" x2="176" y2="148" stroke="#00c8ff" stroke-width="2.5"></line>
+          <circle cx="176" cy="148" r="4" fill="#ff6b00"></circle>
+          <!-- Big toe support (key) -->
+          <circle cx="38" cy="190" r="5" fill="#00d9a3"></circle>
+          <text x="28" y="186" fill="#00d9a3" font-size="7" font-family="sans-serif">BIG</text>
+          <text x="26" y="194" fill="#00d9a3" font-size="7" font-family="sans-serif">TOE</text>
+          <!-- Both fists between legs indicator -->
+          <text x="115" y="148" fill="#ff6b00" font-size="8" font-family="sans-serif">2nd FIST</text>
+          <line x1="130" y1="143" x2="158" y2="136" stroke="#ff6b00" stroke-width="1" stroke-dasharray="3,3"></line>
+          <text x="110" y="206" text-anchor="middle" fill="#6b7fa3" font-size="9" font-family="sans-serif">Both fists between legs · Thumbs out · Big toe support</text>
+        </svg>
+      </div>
+      <div class="pi">
+        <div class="pnum">Posture 7 · MASTERY CHALLENGE</div>
+        <h3>The Gorilla <span style="color:var(--muted);font-size:0.8rem;font-weight:400">— The Harmony</span></h3>
+        <p class="pdesc">"As a rainbow brings together its colors." Unifies all previous postures — the harmony of strength and flexibility. Used by NBA stars Nicolas Batum and Frank Ntilikina.</p>
+        <ul>
+          <li><strong>Builds directly on PIGEON base.</strong> Add second fist on ground between the two legs (previously only one fist). Rise up on BOTH fists, thumbs extended outward throughout.</li>
+          <li>Thumbs must be detached along entire length — they serve as balance points, absorb stress, and protect carpal canals.</li>
+          <li><strong>Active:</strong> Hold raised on both fists. 10 sec × 3 each side.</li>
+          <li><strong>Dynamic:</strong> Push-ups on fists (10 pumps × 3). Big toe bent is KEY support throughout.</li>
+        </ul>
+        <div class="dur">⏱ Active: 10 sec × 3 · Dynamic: 3 × 10 push-ups · BEFORE training</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ EXERCISE DIAGRAMS -->
+<section>
+  <h2 class="st">Key Exercise Illustrations</h2>
+  <p class="sd">Critical movement patterns referenced throughout the program. Study the positions and cues before adding load.</p>
+  <div class="edigrid">
+
+    <!-- Trap Bar Deadlift -->
+    <div class="edcard">
+      <div class="svga">
+        <svg viewBox="0 0 200 195" width="180" height="175" xmlns="http://www.w3.org/2000/svg">
+          <line x1="10" y1="185" x2="190" y2="185" stroke="#1a2e4a" stroke-width="2"></line>
+          <!-- Trap bar -->
+          <rect x="32" y="164" width="136" height="9" rx="4" fill="none" stroke="#ff6b00" stroke-width="2"></rect>
+          <line x1="32" y1="168" x2="12" y2="168" stroke="#ff6b00" stroke-width="3"></line>
+          <line x1="168" y1="168" x2="188" y2="168" stroke="#ff6b00" stroke-width="3"></line>
+          <ellipse cx="14" cy="168" rx="10" ry="6" fill="none" stroke="#ff6b00" stroke-width="2"></ellipse>
+          <ellipse cx="186" cy="168" rx="10" ry="6" fill="none" stroke="#ff6b00" stroke-width="2"></ellipse>
+          <!-- Head -->
+          <circle cx="100" cy="38" r="14" fill="none" stroke="#00c8ff" stroke-width="2.5"></circle>
+          <!-- Neutral spine (hip hinge) -->
+          <line x1="100" y1="52" x2="100" y2="76" stroke="#00c8ff" stroke-width="2.5"></line>
+          <line x1="100" y1="76" x2="97" y2="105" stroke="#00c8ff" stroke-width="2.5"></line>
+          <line x1="97" y1="105" x2="93" y2="132" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Shoulders -->
+          <line x1="73" y1="72" x2="127" y2="72" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Arms to handles -->
+          <line x1="73" y1="72" x2="66" y2="108" stroke="#00c8ff" stroke-width="2"></line>
+          <line x1="66" y1="108" x2="63" y2="164" stroke="#00c8ff" stroke-width="2"></line>
+          <line x1="127" y1="72" x2="134" y2="108" stroke="#00c8ff" stroke-width="2"></line>
+          <line x1="134" y1="108" x2="137" y2="164" stroke="#00c8ff" stroke-width="2"></line>
+          <!-- Hips back -->
+          <circle cx="93" cy="132" r="5" fill="#ff6b00"></circle>
+          <!-- Thighs -->
+          <line x1="93" y1="132" x2="76" y2="162" stroke="#00c8ff" stroke-width="2.5"></line>
+          <line x1="93" y1="132" x2="112" y2="162" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Shins -->
+          <line x1="76" y1="162" x2="74" y2="185" stroke="#00c8ff" stroke-width="2.5"></line>
+          <line x1="112" y1="162" x2="114" y2="185" stroke="#00c8ff" stroke-width="2.5"></line>
+          <circle cx="76" cy="162" r="3" fill="#ff6b00"></circle>
+          <circle cx="112" cy="162" r="3" fill="#ff6b00"></circle>
+          <!-- Spine arrow -->
+          <path d="M105,76 L118,65" stroke="#00d9a3" stroke-width="1.5" stroke-dasharray="3,3"></path>
+          <text x="100" y="197" text-anchor="middle" fill="#6b7fa3" font-size="8.5" font-family="sans-serif">Hip hinge · Neutral spine · Explosive up</text>
+        </svg>
+      </div>
+      <div class="edi">
+        <h4>Trap Bar Deadlift</h4>
+        <p>Day 1 · A1 · 4×5 @ 80–85%<br>3 sec eccentric. Hip hinge, not squat. Neutral spine — do not round lower back.</p>
+      </div>
+    </div>
+
+    <!-- Bulgarian Split Squat -->
+    <div class="edcard">
+      <div class="svga">
+        <svg viewBox="0 0 220 195" width="180" height="175" xmlns="http://www.w3.org/2000/svg">
+          <line x1="10" y1="188" x2="210" y2="188" stroke="#1a2e4a" stroke-width="2"></line>
+          <!-- Bosu ball for rear foot -->
+          <ellipse cx="170" cy="152" rx="34" ry="10" fill="none" stroke="#ff6b00" stroke-width="2"></ellipse>
+          <path d="M136,152 Q170,132 204,152" fill="none" stroke="#ff6b00" stroke-width="2"></path>
+          <!-- Head -->
+          <circle cx="88" cy="40" r="14" fill="none" stroke="#00c8ff" stroke-width="2.5"></circle>
+          <!-- Upright spine -->
+          <line x1="88" y1="54" x2="87" y2="80" stroke="#00c8ff" stroke-width="2.5"></line>
+          <line x1="87" y1="80" x2="85" y2="112" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Shoulders -->
+          <line x1="64" y1="72" x2="112" y2="72" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Dumbbells -->
+          <rect x="42" y="94" width="16" height="26" rx="3" fill="#1a2e4a" stroke="#ff6b00" stroke-width="1.5"></rect>
+          <line x1="64" y1="72" x2="58" y2="94" stroke="#00c8ff" stroke-width="2"></line>
+          <rect x="112" y="94" width="16" height="26" rx="3" fill="#1a2e4a" stroke="#ff6b00" stroke-width="1.5"></rect>
+          <line x1="112" y1="72" x2="116" y2="94" stroke="#00c8ff" stroke-width="2"></line>
+          <!-- Hip -->
+          <circle cx="85" cy="112" r="5" fill="#ff6b00"></circle>
+          <!-- Front leg (knee ~90°) -->
+          <line x1="85" y1="112" x2="70" y2="150" stroke="#00c8ff" stroke-width="2.5"></line>
+          <circle cx="70" cy="150" r="4" fill="#ff6b00"></circle>
+          <line x1="70" y1="150" x2="66" y2="188" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Back leg (on Bosu) -->
+          <line x1="85" y1="112" x2="130" y2="138" stroke="#00c8ff" stroke-width="2.5"></line>
+          <circle cx="130" cy="138" r="4" fill="#ff6b00"></circle>
+          <line x1="130" y1="138" x2="155" y2="150" stroke="#00c8ff" stroke-width="2.5"></line>
+          <text x="110" y="200" text-anchor="middle" fill="#6b7fa3" font-size="8.5" font-family="sans-serif">Rear foot on Bosu · Knee tracks toe</text>
+        </svg>
+      </div>
+      <div class="edi">
+        <h4>Bulgarian Split Squat</h4>
+        <p>Day 1 · B1 · 3×8 each leg @ 70%<br>Rear foot on Bosu ball. Unstable surface amplifies neuromuscular demand.</p>
+      </div>
+    </div>
+
+    <!-- Hang Power Clean -->
+    <div class="edcard">
+      <div class="svga">
+        <svg viewBox="0 0 200 195" width="180" height="175" xmlns="http://www.w3.org/2000/svg">
+          <line x1="10" y1="188" x2="190" y2="188" stroke="#1a2e4a" stroke-width="2"></line>
+          <!-- Front rack catch position -->
+          <!-- Head -->
+          <circle cx="100" cy="36" r="14" fill="none" stroke="#00c8ff" stroke-width="2.5"></circle>
+          <!-- Spine -->
+          <line x1="100" y1="50" x2="100" y2="76" stroke="#00c8ff" stroke-width="2.5"></line>
+          <line x1="100" y1="76" x2="98" y2="104" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Bar at shoulder height -->
+          <line x1="28" y1="70" x2="172" y2="70" stroke="#ff6b00" stroke-width="3"></line>
+          <ellipse cx="28" cy="70" rx="10" ry="6" fill="none" stroke="#ff6b00" stroke-width="2"></ellipse>
+          <ellipse cx="172" cy="70" rx="10" ry="6" fill="none" stroke="#ff6b00" stroke-width="2"></ellipse>
+          <!-- Shoulders (elbows HIGH in front rack) -->
+          <line x1="70" y1="70" x2="130" y2="70" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Elbows high out -->
+          <line x1="70" y1="70" x2="40" y2="82" stroke="#00c8ff" stroke-width="2"></line>
+          <line x1="40" y1="82" x2="32" y2="70" stroke="#00c8ff" stroke-width="2"></line>
+          <line x1="130" y1="70" x2="160" y2="82" stroke="#00c8ff" stroke-width="2"></line>
+          <line x1="160" y1="82" x2="168" y2="70" stroke="#00c8ff" stroke-width="2"></line>
+          <!-- Hip (quarter squat catch) -->
+          <circle cx="98" cy="104" r="5" fill="#ff6b00"></circle>
+          <!-- Thighs -->
+          <line x1="98" y1="104" x2="78" y2="142" stroke="#00c8ff" stroke-width="2.5"></line>
+          <line x1="98" y1="104" x2="118" y2="142" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Shins -->
+          <line x1="78" y1="142" x2="74" y2="188" stroke="#00c8ff" stroke-width="2.5"></line>
+          <line x1="118" y1="142" x2="122" y2="188" stroke="#00c8ff" stroke-width="2.5"></line>
+          <circle cx="78" cy="142" r="4" fill="#ff6b00"></circle>
+          <circle cx="118" cy="142" r="4" fill="#ff6b00"></circle>
+          <!-- Triple extension arrow -->
+          <path d="M140,110 L140,188" stroke="#00d9a3" stroke-width="1" stroke-dasharray="4,3"></path>
+          <text x="155" y="150" fill="#00d9a3" font-size="8" font-family="sans-serif" transform="rotate(-90,155,150)">Triple ext.</text>
+          <text x="100" y="200" text-anchor="middle" fill="#6b7fa3" font-size="8.5" font-family="sans-serif">Elbows high · Quarter squat catch</text>
+        </svg>
+      </div>
+      <div class="edi">
+        <h4>Hang Power Clean</h4>
+        <p>Day 4 · A1 · 4×4 @ 75–80%<br>Triple extension of ankle/knee/hip replicates skating push-off. Key power movement.</p>
+      </div>
+    </div>
+
+    <!-- Lateral Bound -->
+    <div class="edcard">
+      <div class="svga">
+        <svg viewBox="0 0 230 195" width="180" height="175" xmlns="http://www.w3.org/2000/svg">
+          <line x1="10" y1="185" x2="220" y2="185" stroke="#1a2e4a" stroke-width="2"></line>
+          <!-- Ghost push-off figure (left, faded) -->
+          <circle cx="52" cy="68" r="12" fill="none" stroke="#1a2e4a" stroke-width="2"></circle>
+          <line x1="52" y1="80" x2="50" y2="105" stroke="#1a2e4a" stroke-width="2"></line>
+          <line x1="50" y1="105" x2="40" y2="138" stroke="#1a2e4a" stroke-width="2"></line>
+          <line x1="40" y1="138" x2="36" y2="185" stroke="#1a2e4a" stroke-width="2"></line>
+          <!-- Travel arrow -->
+          <path d="M82,100 L152,100" stroke="#00d9a3" stroke-width="2" stroke-dasharray="6,4"></path>
+          <polygon points="156,100 148,96 148,104" fill="#00d9a3"></polygon>
+          <!-- Landing figure (right, solid) -->
+          <circle cx="178" cy="50" r="14" fill="none" stroke="#00c8ff" stroke-width="2.5"></circle>
+          <!-- Spine (athletic lean) -->
+          <line x1="178" y1="64" x2="175" y2="88" stroke="#00c8ff" stroke-width="2.5"></line>
+          <line x1="175" y1="88" x2="168" y2="116" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Shoulders -->
+          <line x1="148" y1="82" x2="200" y2="82" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Left arm cross-body swing -->
+          <line x1="148" y1="82" x2="130" y2="64" stroke="#00c8ff" stroke-width="2"></line>
+          <line x1="130" y1="64" x2="118" y2="50" stroke="#00c8ff" stroke-width="2"></line>
+          <circle cx="118" cy="50" r="3" fill="#00c8ff"></circle>
+          <!-- Right arm back -->
+          <line x1="200" y1="82" x2="214" y2="100" stroke="#00c8ff" stroke-width="2"></line>
+          <circle cx="214" cy="100" r="3" fill="#00c8ff"></circle>
+          <!-- Hip -->
+          <circle cx="168" cy="116" r="5" fill="#ff6b00"></circle>
+          <!-- Single landing leg (right) -->
+          <line x1="168" y1="116" x2="160" y2="152" stroke="#00c8ff" stroke-width="2.5"></line>
+          <circle cx="160" cy="152" r="4" fill="#ff6b00"></circle>
+          <line x1="160" y1="152" x2="163" y2="185" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Left leg in air -->
+          <line x1="168" y1="116" x2="183" y2="142" stroke="#00c8ff" stroke-width="2.5"></line>
+          <circle cx="183" cy="142" r="4" fill="#ff6b00"></circle>
+          <line x1="183" y1="142" x2="196" y2="158" stroke="#00c8ff" stroke-width="2.5"></line>
+          <text x="115" y="197" text-anchor="middle" fill="#6b7fa3" font-size="8.5" font-family="sans-serif">Push · Land single leg · Stick 2 sec</text>
+        </svg>
+      </div>
+      <div class="edi">
+        <h4>Reactive Lateral Bound</h4>
+        <p>Day 1 · A2 · 4×4 each leg<br>Contrast after deadlift. Land and absorb — 2 sec hold. Trains single-leg deceleration.</p>
+      </div>
+    </div>
+
+    <!-- Pallof Press -->
+    <div class="edcard">
+      <div class="svga">
+        <svg viewBox="0 0 210 195" width="180" height="175" xmlns="http://www.w3.org/2000/svg">
+          <line x1="10" y1="185" x2="200" y2="185" stroke="#1a2e4a" stroke-width="2"></line>
+          <!-- Cable anchor point (right side) -->
+          <circle cx="198" cy="100" r="6" fill="#ff6b00"></circle>
+          <!-- Cable line -->
+          <line x1="155" y1="100" x2="192" y2="100" stroke="#ff6b00" stroke-width="1.5" stroke-dasharray="4,3"></line>
+          <!-- Head -->
+          <circle cx="88" cy="40" r="14" fill="none" stroke="#00c8ff" stroke-width="2.5"></circle>
+          <!-- Spine upright -->
+          <line x1="88" y1="54" x2="88" y2="80" stroke="#00c8ff" stroke-width="2.5"></line>
+          <line x1="88" y1="80" x2="88" y2="115" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Shoulders -->
+          <line x1="62" y1="76" x2="114" y2="76" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Both arms extended (pressing out) -->
+          <line x1="62" y1="76" x2="62" y2="100" stroke="#00c8ff" stroke-width="2"></line>
+          <line x1="62" y1="100" x2="82" y2="100" stroke="#00c8ff" stroke-width="2"></line>
+          <line x1="114" y1="76" x2="114" y2="100" stroke="#00c8ff" stroke-width="2"></line>
+          <line x1="114" y1="100" x2="155" y2="100" stroke="#00c8ff" stroke-width="2"></line>
+          <!-- Handle -->
+          <circle cx="155" cy="100" r="5" fill="#00c8ff"></circle>
+          <!-- Hip -->
+          <circle cx="88" cy="115" r="5" fill="#ff6b00"></circle>
+          <!-- Stance (athletic) -->
+          <line x1="88" y1="115" x2="70" y2="152" stroke="#00c8ff" stroke-width="2.5"></line>
+          <line x1="70" y1="152" x2="66" y2="185" stroke="#00c8ff" stroke-width="2.5"></line>
+          <line x1="88" y1="115" x2="108" y2="152" stroke="#00c8ff" stroke-width="2.5"></line>
+          <line x1="108" y1="152" x2="112" y2="185" stroke="#00c8ff" stroke-width="2.5"></line>
+          <circle cx="70" cy="152" r="3" fill="#ff6b00"></circle>
+          <circle cx="108" cy="152" r="3" fill="#ff6b00"></circle>
+          <!-- Anti-rotation arrows -->
+          <path d="M88,100 Q75,88 74,76" fill="none" stroke="#00d9a3" stroke-width="1.5" stroke-dasharray="3,3"></path>
+          <text x="105" y="197" text-anchor="middle" fill="#6b7fa3" font-size="8.5" font-family="sans-serif">Resist rotation · Core braced</text>
+        </svg>
+      </div>
+      <div class="edi">
+        <h4>Pallof Press Iso Hold</h4>
+        <p>Day 2 · C2 · 3×20 sec each side<br>Anti-rotation core stability. Direct transfer to puck protection and contact strength.</p>
+      </div>
+    </div>
+
+    <!-- Skater Squat -->
+    <div class="edcard">
+      <div class="svga">
+        <svg viewBox="0 0 200 195" width="180" height="175" xmlns="http://www.w3.org/2000/svg">
+          <line x1="10" y1="185" x2="190" y2="185" stroke="#1a2e4a" stroke-width="2"></line>
+          <!-- Single-leg squat, back leg behind — skating stride angle -->
+          <!-- Head -->
+          <circle cx="100" cy="38" r="14" fill="none" stroke="#00c8ff" stroke-width="2.5"></circle>
+          <!-- Spine (slight forward lean) -->
+          <line x1="100" y1="52" x2="98" y2="78" stroke="#00c8ff" stroke-width="2.5"></line>
+          <line x1="98" y1="78" x2="94" y2="110" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Shoulders -->
+          <line x1="72" y1="72" x2="125" y2="72" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Arms out for balance -->
+          <line x1="72" y1="72" x2="44" y2="88" stroke="#00c8ff" stroke-width="2"></line>
+          <circle cx="44" cy="88" r="3" fill="#00c8ff"></circle>
+          <line x1="125" y1="72" x2="148" y2="62" stroke="#00c8ff" stroke-width="2"></line>
+          <circle cx="148" cy="62" r="3" fill="#00c8ff"></circle>
+          <!-- Hip -->
+          <circle cx="94" cy="110" r="5" fill="#ff6b00"></circle>
+          <!-- Stance leg (deep single-leg squat) -->
+          <line x1="94" y1="110" x2="80" y2="152" stroke="#00c8ff" stroke-width="2.5"></line>
+          <circle cx="80" cy="152" r="4" fill="#ff6b00"></circle>
+          <line x1="80" y1="152" x2="78" y2="185" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- Back leg (extended behind, off ground) -->
+          <line x1="94" y1="110" x2="128" y2="140" stroke="#00c8ff" stroke-width="2.5"></line>
+          <circle cx="128" cy="140" r="4" fill="#ff6b00"></circle>
+          <line x1="128" y1="140" x2="155" y2="158" stroke="#00c8ff" stroke-width="2.5"></line>
+          <!-- 2 sec iso hold label -->
+          <rect x="52" y="158" width="52" height="16" rx="4" fill="rgba(255,107,0,0.15)" stroke="none"></rect>
+          <text x="78" y="170" text-anchor="middle" fill="#ff6b00" font-size="9" font-family="sans-serif" font-weight="bold">2 sec hold</text>
+          <text x="100" y="197" text-anchor="middle" fill="#6b7fa3" font-size="8.5" font-family="sans-serif">Single leg · Skating stride angle</text>
+        </svg>
+      </div>
+      <div class="edi">
+        <h4>Skater Squat (TG Method)</h4>
+        <p>Day 1 · C · 3×10 each leg<br>Mimics skating push-off angle. 2 sec isometric hold at bottom. Bodyweight to loaded.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ DAY-BY-DAY -->
+<section>
+  <h2 class="st">Day-by-Day Program</h2>
+  <p class="sd">Every session opens with the Marinovich CNS Activation Protocol (10 min): 5 nasal breathing cycles → full joint circles → eyes-closed single-leg balance 30 sec each → foam roll thoracic/hips/hip flexors.</p>
+
+  <!-- DAY 1 -->
+  <div class="dcard">
+    <div class="dhdr">
+      <div class="dnb">1</div>
+      <div>
+        <h3>Lower Body Power + Neuromuscular Foundation</h3>
+        <p>Ziani Active/Dynamic warm-up (BEFORE exertion): The Cat (standing split squat on box, 3 × 10 each) → The Cow (push-ups on fists, 3 × 10) → The Frog (deep squat + ankle flexions, 3 × 10). Passive holds AFTER training only.</p>
+      </div>
+    <div class="day-progress-wrap"><div class="day-progress-bg"><div class="day-progress-fill" id="dpf-0" style="width: 0%;"></div></div><span class="day-progress-pct" id="dpp-0">0%</span></div></div>
+    <div class="dbody">
+      <div class="plbl">Warm-Up — After CNS Protocol + Ziani</div>
+      <div class="exrow" data-ex-id="ex-0"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">Lateral Band Walks</span><span class="exs">2 × 15 each</span><span class="exd">Glute med activation — hockey hip width</span></div>
+      <div class="exrow" data-ex-id="ex-1"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">Single-Leg Hip Airplane</span><span class="exs">2 × 8 each</span><span class="exd">Proprioceptive glute activation <span class="nb">NM</span></span></div>
+      <div class="exrow" data-ex-id="ex-2"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">A-Skip + Lateral Shuffle Combo</span><span class="exs">2 × 20 m</span><span class="exd">CNS priming + skating pattern</span></div>
+      <div class="exrow" data-ex-id="ex-3"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">Bosu Squat Hold, Eyes Closed</span><span class="exs">2 × 20 sec</span><span class="exd">Marinovich proprioception baseline <span class="nb">NM</span></span></div>
+
+      <div class="plbl">Strength Block — Contrast Pairs</div>
+      <div class="exrow" data-ex-id="ex-4"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">A1 · Trap Bar Deadlift</span><span class="exs">4 × 5 @ 80–85%</span><span class="exd">3 sec eccentric, explosive concentric — rest 10 sec then → <span class="cb">CONTRAST</span></span></div>
+      <div class="exrow" data-ex-id="ex-5"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">A2 · Reactive Lateral Bound to Stick</span><span class="exs">4 × 4 each</span><span class="exd">Land + hold 2 sec — rest 2 min between pairs</span></div>
+      <div class="exrow" data-ex-id="ex-6"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">B1 · Bulgarian Split Squat on Bosu</span><span class="exs">3 × 8 each @ 70%</span><span class="exd">Unstable surface NM demand — rest 10 sec then → <span class="nb">NM</span> <span class="cb">CONTRAST</span></span></div>
+      <div class="exrow" data-ex-id="ex-7"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">B2 · Single-Leg Box Jump</span><span class="exs">3 × 4 each</span><span class="exd">Reactive, minimal ground contact — rest 90 sec</span></div>
+      <div class="exrow" data-ex-id="ex-8"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">C · Skater Squat (TG Method)</span><span class="exs">3 × 10 each</span><span class="exd">2 sec iso hold at bottom — mimics skating push-off angle</span></div>
+      <div class="exrow" data-ex-id="ex-9"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">Lateral Hurdle Hops (Reactive)</span><span class="exs">3 × 8 each</span><span class="exd">Continuous, fast ground contact — rate of force development</span></div>
+
+      <div class="plbl">Neuromuscular Finisher — Marinovich</div>
+      <div class="exrow" data-ex-id="ex-10"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">Single-Leg RDL on Airex, Eyes Closed</span><span class="exs">3 × 8 each</span><span class="exd">Proprioceptive overload — body awareness training <span class="nb">NM</span></span></div>
+      <div class="exrow" data-ex-id="ex-11"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">Perturbation Balance</span><span class="exs">3 × 20 sec each</span><span class="exd">Partner pushes shoulders while holding single-leg stance <span class="nb">NM</span></span></div>
+
+      <div class="plbl">CNS Downregulation — Ziani Close (Passive/Static AFTER exertion)</div>
+      <div class="exrow" data-ex-id="ex-12"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">The Frog — Passive Deep Squat Hold</span><span class="exs">10 sec × 3</span><span class="exd">Heels flat, feet forward — passive hold after lower body work <span class="zb">ZIANI</span></span></div>
+      <div class="exrow" data-ex-id="ex-13"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">The Pigeon — Triangle Passive Hold</span><span class="exs">10 sec × 3 each side</span><span class="exd">Hip rotator release post skating-pattern load <span class="zb">ZIANI</span></span></div>
+      <div class="exrow" data-ex-id="ex-14"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">Nasal Breathing</span><span class="exs">10 cycles</span><span class="exd">4 sec inhale / 6 sec exhale — full nervous system reset</span></div>
+    </div>
+  </div>
+
+  <!-- DAY 2 -->
+  <div class="dcard">
+    <div class="dhdr">
+      <div class="dnb" style="background:#ff6b00;">2</div>
+      <div>
+        <h3>Upper Body Strength + Rotational Power</h3>
+        <p>Ziani Active/Dynamic warm-up (BEFORE exertion): The Grasshopper (toe swings + heel press, 3 × 10 each) → The Gorilla (fist push-ups on Pigeon base, 3 × 10). Passive holds AFTER training only.</p>
+      </div>
+    <div class="day-progress-wrap"><div class="day-progress-bg"><div class="day-progress-fill" id="dpf-1" style="width: 0%;"></div></div><span class="day-progress-pct" id="dpp-1">0%</span></div></div>
+    <div class="dbody">
+      <div class="plbl">Warm-Up — After CNS Protocol + Ziani</div>
+      <div class="exrow" data-ex-id="ex-15"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">Shoulder CARs</span><span class="exs">2 × 5 each</span><span class="exd">Full controlled articular rotation — joint prep</span></div>
+      <div class="exrow" data-ex-id="ex-16"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">Band Pull-Aparts</span><span class="exs">2 × 20</span><span class="exd">Scapular health — critical for high-volume hockey players</span></div>
+      <div class="exrow" data-ex-id="ex-17"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">Half-Kneeling Cable Chop/Lift</span><span class="exs">2 × 10 each</span><span class="exd">Rotational warm-up — hip-to-shoulder connection</span></div>
+      <div class="exrow" data-ex-id="ex-18"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">Rotational Med Ball Scoop Toss (4 kg)</span><span class="exs">2 × 8 each</span><span class="exd">Light — pattern rehearsal, not conditioning</span></div>
+
+      <div class="plbl">Strength Block — Contrast Pairs</div>
+      <div class="exrow" data-ex-id="ex-19"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">A1 · Weighted Pull-Up</span><span class="exs">4 × 6 @ 75–80%</span><span class="exd">3 sec eccentric, full dead hang — rest 10 sec then → <span class="cb">CONTRAST</span></span></div>
+      <div class="exrow" data-ex-id="ex-20"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">A2 · Med Ball Slam</span><span class="exs">4 × 5</span><span class="exd">Maximal intent, rapid reload — rest 2 min</span></div>
+      <div class="exrow" data-ex-id="ex-21"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">B1 · Landmine Press (Rotational)</span><span class="exs">3 × 8 each</span><span class="exd">Single-arm, hip-initiated — shooting/passing mechanics <span class="cb">CONTRAST</span></span></div>
+      <div class="exrow" data-ex-id="ex-22"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">B2 · Rotational Med Ball Wall Throw</span><span class="exs">3 × 6 each</span><span class="exd">Hip rotation initiates throw — rest 90 sec</span></div>
+      <div class="exrow" data-ex-id="ex-23"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">C1 · 1-Arm DB Row (Supported)</span><span class="exs">3 × 10 each</span><span class="exd">Scapular retraction — 3:1 pull-to-push ratio for hockey</span></div>
+      <div class="exrow" data-ex-id="ex-24"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">C2 · Pallof Press Iso Hold</span><span class="exs">3 × 20 sec each</span><span class="exd">Anti-rotation core — puck protection and board strength <span class="nb">NM</span></span></div>
+
+      <div class="plbl">Grip / Forearm Circuit — TG Hockey-Specific</div>
+      <div class="exrow" data-ex-id="ex-25"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">Plate Pinch Carry</span><span class="exs">3 × 30 m</span><span class="exd">Stick-handling and board battle grip</span></div>
+      <div class="exrow" data-ex-id="ex-26"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">Towel Pull-Up Negatives</span><span class="exs">3 × 3 reps (3 sec lower)</span><span class="exd">Extreme grip + lat demand</span></div>
+      <div class="exrow" data-ex-id="ex-27"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">Wrist Roller</span><span class="exs">3 × 2 each direction</span><span class="exd">Flexion and extension balance</span></div>
+
+      <div class="plbl">CNS Downregulation — Ziani Close (Passive/Static AFTER exertion)</div>
+      <div class="exrow" data-ex-id="ex-28"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">The Grasshopper — Passive Toe Extension Hold</span><span class="exs">10 sec × 3 each side</span><span class="exd">Big toe activation + ankle/wrist reset post upper-body session <span class="zb">ZIANI</span></span></div>
+      <div class="exrow" data-ex-id="ex-29"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">The Pigeon — Triangle Passive Hold</span><span class="exs">10 sec × 3 each side</span><span class="exd">Hip rotary release — first rotary posture, key after pressing <span class="zb">ZIANI</span></span></div>
+      <div class="exrow" data-ex-id="ex-30"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">Nasal Breathing</span><span class="exs">10 cycles</span><span class="exd">4 sec in / 6 sec out</span></div>
+    </div>
+  </div>
+
+  <!-- DAY 3 -->
+  <div class="dcard">
+    <div class="dhdr">
+      <div class="dnb" style="background:#00d9a3; color:#000;">3</div>
+      <div>
+        <h3>CNS Recovery + Movement Quality + Full Ziani Sequence</h3>
+        <p>40–50% effort only. This day is non-negotiable — it is where the CNS consolidates adaptation from Days 1 and 2.</p>
+      </div>
+    <div class="day-progress-wrap"><div class="day-progress-bg"><div class="day-progress-fill" id="dpf-2" style="width: 0%;"></div></div><span class="day-progress-pct" id="dpp-2">0%</span></div></div>
+    <div class="dbody">
+      <div class="plbl">Full Ziani 7-Posture Sequence — IN ORDER, ALWAYS (35–40 min)</div>
+      <div style="background:rgba(0,217,163,0.07);border:1px solid rgba(0,217,163,0.2);border-radius:8px;padding:10px 14px;margin-bottom:12px;font-size:0.8rem;color:var(--muted);">Protocol: <strong style="color:var(--text);">10 sec × 3</strong> passive holds. <strong style="color:var(--text);">3 × 10 reps</strong> active/dynamic. Pain max 3–4/10. Always barefoot. Order is non-negotiable.</div>
+      <div class="exrow" data-ex-id="ex-31"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">1. The Cat — Side-Lying</span><span class="exs">10 sec × 3 each side</span><span class="exd">Knee to chest, grab all toes, bend toward you — awakens all joints <span class="zb">ZIANI</span></span></div>
+      <div class="exrow" data-ex-id="ex-32"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">2. The Cow — Buttocks Between Heels</span><span class="exs">10 sec × 3</span><span class="exd">Heels open wide, fists on ground with thumbs extended — spine tall <span class="zb">ZIANI</span></span></div>
+      <div class="exrow" data-ex-id="ex-33"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">3. The Frog — Deep Squat, Heels Flat</span><span class="exs">10 sec × 3 (challenge)</span><span class="exd">Feet pointing FORWARD, heels down, elbows on knees — diagnostic posture <span class="zb">ZIANI</span></span></div>
+      <div class="exrow" data-ex-id="ex-34"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">4. The Camel — Half Cow + Half Frog</span><span class="exs">10 sec × 3 each side</span><span class="exd">Fist on ground, raise knee to collarbone — Ziani's favorite <span class="zb">ZIANI</span></span></div>
+      <div class="exrow" data-ex-id="ex-35"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">5. The Grasshopper — Extreme Toe Extension</span><span class="exs">10 sec × 3 each side</span><span class="exd">Leg straightens, arch on 5 bent toes — big toe as governor of movement <span class="zb">ZIANI</span></span></div>
+      <div class="exrow" data-ex-id="ex-36"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">6. The Pigeon — Leg Triangle</span><span class="exs">10 sec × 3 each side</span><span class="exd">Foot slides to knee edge creating triangle — FIRST rotary posture <span class="zb">ZIANI</span></span></div>
+      <div class="exrow" data-ex-id="ex-37"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">7. The Gorilla — Rise on Both Fists</span><span class="exs">10 sec × 3 each side</span><span class="exd">Second fist added between legs — thumbs out — big toe supports — mastery <span class="zb">ZIANI</span></span></div>
+
+      <div class="plbl">Movement Skill — Hockey-Specific (30 min)</div>
+      <div class="exrow" data-ex-id="ex-38"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">Lateral Shuffle + Crossover Footwork</span><span class="exs">5 × 20 m</span><span class="exd">Skill, not conditioning — casual pace</span></div>
+      <div class="exrow" data-ex-id="ex-39"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">Slide Board or Skate Simulation</span><span class="exs">3 × 60 sec</span><span class="exd">Skating mechanics maintenance</span></div>
+      <div class="exrow" data-ex-id="ex-40"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">T-Drill Walk-Through</span><span class="exs">4 reps</span><span class="exd">Change of direction mechanics — not speed</span></div>
+      <div class="exrow" data-ex-id="ex-41"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">Eyes-Closed Stick Handling</span><span class="exs">2 × 60 sec</span><span class="exd">Marinovich sensory integration — feel only <span class="nb">NM</span></span></div>
+
+      <div class="plbl">Marinovich Proprioceptive Work</div>
+      <div class="exrow" data-ex-id="ex-42"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">Bosu Squat + Single-Leg Hold, Eyes Closed</span><span class="exs">3 × 30 sec each</span><span class="exd">Vestibular + proprioceptive system training <span class="nb">NM</span></span></div>
+      <div class="exrow" data-ex-id="ex-43"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">Single-Leg Stance + Head Turns</span><span class="exs">2 × 30 sec each</span><span class="exd">Simulates balance demand during checking and contact <span class="nb">NM</span></span></div>
+    </div>
+  </div>
+
+  <!-- DAY 4 -->
+  <div class="dcard">
+    <div class="dhdr">
+      <div class="dnb">4</div>
+      <div>
+        <h3>Total Body Athletic Power — Contrast Method</h3>
+        <p>Ziani Active/Dynamic warm-up (BEFORE exertion): The Cat (dynamic split squat) → The Camel (single-leg squat, 3 × 10 each) → The Gorilla (fist push-ups, 3 × 10)</p>
+      </div>
+    <div class="day-progress-wrap"><div class="day-progress-bg"><div class="day-progress-fill" id="dpf-3" style="width: 0%;"></div></div><span class="day-progress-pct" id="dpp-3">0%</span></div></div>
+    <div class="dbody">
+      <div class="plbl">Warm-Up — After CNS Protocol + Ziani</div>
+      <div class="exrow" data-ex-id="ex-44"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">Broad Jump × 3 (Sub-maximal)</span><span class="exs">3 sets</span><span class="exd">60–70% — movement prep only</span></div>
+      <div class="exrow" data-ex-id="ex-45"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">Hang Power Clean — Empty Bar</span><span class="exs">5 reps</span><span class="exd">Pattern rehearsal before loading</span></div>
+      <div class="exrow" data-ex-id="ex-46"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">Lateral Bound + Sprint</span><span class="exs">3 × 15 m</span><span class="exd">CNS activation sequence</span></div>
+
+      <div class="plbl">Power Block — Contrast Pairs</div>
+      <div class="exrow" data-ex-id="ex-47"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">A1 · Hang Power Clean</span><span class="exs">4 × 4 @ 75–80%</span><span class="exd">Triple extension — ankle/knee/hip — rest 10 sec then → <span class="cb">CONTRAST</span></span></div>
+      <div class="exrow" data-ex-id="ex-48"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">A2 · Depth Jump to Lateral Bound</span><span class="exs">4 × 4</span><span class="exd">Step off box, absorb, bound laterally — rest 2.5 min</span></div>
+      <div class="exrow" data-ex-id="ex-49"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">B1 · Front Squat</span><span class="exs">3 × 5 @ 78%</span><span class="exd">Upright torso (skating posture) — rest 10 sec then → <span class="cb">CONTRAST</span></span></div>
+      <div class="exrow" data-ex-id="ex-50"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">B2 · Tuck Jump</span><span class="exs">3 × 5</span><span class="exd">Max hip flexion, rapid ground contact — rest 2 min</span></div>
+      <div class="exrow" data-ex-id="ex-51"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">C1 · Trap Bar Jump Squat</span><span class="exs">3 × 6 @ 30–40% BW</span><span class="exd">Maximal bar speed — peak power output training <span class="cb">CONTRAST</span></span></div>
+      <div class="exrow" data-ex-id="ex-52"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">C2 · 15 m Sprint</span><span class="exs">3 × 2</span><span class="exd">Max acceleration — full recovery — rest 2.5 min</span></div>
+
+      <div class="plbl">TG Hockey Agility Block</div>
+      <div class="exrow" data-ex-id="ex-53"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">5-10-5 Pro Agility Drill</span><span class="exs">6 reps</span><span class="exd">Focus on edge angle quality, not just time</span></div>
+      <div class="exrow" data-ex-id="ex-54"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">Backward Skate Simulation (Resistance Band)</span><span class="exs">3 × 15 m</span><span class="exd">Defensive positioning strength</span></div>
+      <div class="exrow" data-ex-id="ex-55"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">4-Corner Reaction Drill</span><span class="exs">4 × 30 sec</span><span class="exd">Coach calls direction — reactive CNS training <span class="nb">NM</span></span></div>
+    </div>
+  </div>
+
+  <!-- DAY 5 -->
+  <div class="dcard">
+    <div class="dhdr">
+      <div class="dnb" style="background:#c084fc; color:#000;">5</div>
+      <div>
+        <h3>Hockey Metabolic Conditioning + Reactive Agility</h3>
+        <p>Ziani Active/Dynamic warm-up (BEFORE): The Cow (push-ups on fists, 3 × 10) → The Frog (deep squat + ankle flexions, 3 × 10) → The Grasshopper (toe swings, 3 × 10 each). Close with The Pigeon passive hold (AFTER).</p>
+      </div>
+    <div class="day-progress-wrap"><div class="day-progress-bg"><div class="day-progress-fill" id="dpf-4" style="width: 0%;"></div></div><span class="day-progress-pct" id="dpp-4">0%</span></div></div>
+    <div class="dbody">
+      <div class="plbl">Hockey Shift Protocol — 45 sec work / 2:30 rest (replicates exact shift demands)</div>
+      <div class="exrow" data-ex-id="ex-56"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">Shift 1 · Sled Push + Drag</span><span class="exs">45 sec</span><span class="exd">Push 20 m, drag sled back — hip drive + posterior chain</span></div>
+      <div class="exrow" data-ex-id="ex-57"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">Shift 2 · Battle Rope + Lateral Shuffle</span><span class="exs">45 sec</span><span class="exd">Alternating waves + shuffle — upper-lower combo</span></div>
+      <div class="exrow" data-ex-id="ex-58"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">Shift 3 · Box Jumps + KB Swings</span><span class="exs">45 sec</span><span class="exd">5 jumps + 10 swings continuous — power endurance</span></div>
+      <div class="exrow" data-ex-id="ex-59"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">Shift 4 · Assault Bike Max Sprint</span><span class="exs">45 sec</span><span class="exd">Maximal RPM — lactate system overload</span></div>
+      <div class="exrow" data-ex-id="ex-60"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">— Rest 3 min — Round 2 (Shifts 5–8)</span><span class="exs"></span><span class="exd">Farmer Carry + Sprint · Hurdle Hops + Slams · TRX Circuit · Assault Bike</span></div>
+      <div class="exrow" data-ex-id="ex-61"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">Shifts 9–10 — Fatigue Threshold</span><span class="exs">2 × 45 sec</span><span class="exd">Sled or assault bike — this is where adaptation happens</span></div>
+
+      <div class="plbl">Reactive NM Finisher — Under Fatigue (Marinovich)</div>
+      <div class="exrow" data-ex-id="ex-62"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">Single-Leg Balance, Eyes Closed + Perturbation</span><span class="exs">3 × 20 sec each</span><span class="exd">NM adaptations are greatest when executed under fatigue <span class="nb">NM</span></span></div>
+      <div class="exrow" data-ex-id="ex-63"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">Reactive 3-Cone Drill — Random Go</span><span class="exs">6 reps</span><span class="exd">Coach calls "go" with 1–3 sec random delay — reaction training <span class="nb">NM</span></span></div>
+      <div class="exrow" data-ex-id="ex-64"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">Eyes-Closed Stick Handling</span><span class="exs">2 × 60 sec</span><span class="exd">Kinesthetic awareness trained at peak fatigue <span class="nb">NM</span></span></div>
+
+      <div class="plbl">Full CNS Reset — Ziani Finish (Passive/Static AFTER exertion)</div>
+      <div class="exrow" data-ex-id="ex-65"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">The Frog — Passive Hold</span><span class="exs">10 sec × 3</span><span class="exd">Heels flat, diagnostic — most demanding after metabolic conditioning <span class="zb">ZIANI</span></span></div>
+      <div class="exrow" data-ex-id="ex-66"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">The Pigeon — Passive Triangle Hold</span><span class="exs">10 sec × 3 each side</span><span class="exd">Parasympathetic recovery — hip rotary reset after max conditioning <span class="zb">ZIANI</span></span></div>
+      <div class="exrow" data-ex-id="ex-67"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">4-7-8 Breathing</span><span class="exs">6 cycles</span><span class="exd">Inhale 4 / hold 7 / exhale 8 — deep CNS downregulation</span></div>
+      <div class="exrow" data-ex-id="ex-68"><div class="ex-check"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="exn">Cold Water Immersion (legs, if available)</span><span class="exs">10 min</span><span class="exd">12–15°C — lactate clearance + parasympathetic activation</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ PROGRESSION -->
+<section>
+  <h2 class="st">4-Week Progression Model</h2>
+  <p class="sd">Ziani posture hold times and Marinovich NM complexity both scale across the block. Week 4 is the true unlock week — do not skip it.</p>
+  <table class="ptbl">
+    <thead><tr><th>Week</th><th>Load</th><th>NM Complexity</th><th>Ziani Protocol</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Week 1</strong></td><td>70–75%</td><td>Bilateral foundations · stable surfaces</td><td>Learn all 7 postures · 2 min holds · notice tight areas</td></tr>
+      <tr><td><strong>Week 2</strong></td><td>75–80%</td><td>Bosu/Airex added to key movements</td><td>Add 30 sec to each hold · observe unlocking progression</td></tr>
+      <tr><td><strong>Week 3</strong></td><td>80–85%</td><td>Partner perturbation + reactive cues throughout</td><td>Full 3 min holds · eyes closed for Postures 1, 4, and 7</td></tr>
+      <tr><td><strong>Week 4 — Deload</strong></td><td>60%</td><td>Eyes-closed proprioception emphasis only</td><td>Double all hold times · this is where the body fully integrates</td></tr>
+    </tbody>
+  </table>
+</section>
+
+</div><!-- /container -->
+
+<footer>
+  <p>Program integrating the TG Method (Tony Greco) · Neuromuscular Performance System (Marv Marinovich) · 7 Unlocking Postures (Kadour Ziani)</p>
+  <p>Adjust loading percentages based on athlete's current 1RM. Consult a qualified strength &amp; conditioning coach before beginning any new training program.</p>
+</footer>
+
+<!-- ═══════════════════════════════════════════════════ PROGRESS TRACKER -->
+<style>
+/* ── STICKY PROGRESS BAR ── */
+#progress-dock {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  background: rgba(6,11,23,0.96);
+  border-top: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+  padding: 10px 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  z-index: 999;
+  flex-wrap: wrap;
+}
+#progress-dock .dock-label {
+  font-size: 0.78rem;
+  color: var(--muted);
+  white-space: nowrap;
+  font-weight: 600;
+}
+.day-pills { display: flex; gap: 8px; flex-wrap: wrap; flex: 1; }
+.day-pill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.day-pill .pill-label { color: var(--muted); }
+.day-pill .pill-count { color: var(--accent); font-weight: 700; }
+.day-pill.day-complete { border-color: var(--green); background: rgba(0,217,163,0.08); }
+.day-pill.day-complete .pill-label { color: var(--green); }
+.day-pill.day-complete .pill-count { color: var(--green); }
+.day-pill .pill-check { font-size: 0.9rem; display: none; }
+.day-pill.day-complete .pill-check { display: inline; }
+#reset-btn {
+  background: none;
+  border: 1px solid rgba(255,107,0,0.3);
+  color: rgba(255,107,0,0.6);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+#reset-btn:hover { border-color: var(--accent2); color: var(--accent2); }
+
+/* ── CHECKBOXES ON EXERCISE ROWS ── */
+.exrow { cursor: pointer; transition: background 0.15s; position: relative; }
+.exrow:hover { background: rgba(255,255,255,0.03); border-radius: 6px; }
+.ex-check {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.2s;
+  margin-right: 4px;
+}
+.ex-check svg { opacity: 0; transition: opacity 0.15s; }
+.exrow.done .ex-check {
+  background: var(--green);
+  border-color: var(--green);
+}
+.exrow.done .ex-check svg { opacity: 1; }
+.exrow.done .exn { text-decoration: line-through; color: var(--muted); }
+.exrow.done .exs { color: var(--green); }
+.exrow.done .exd { opacity: 0.45; }
+
+/* ── PER-DAY PROGRESS BAR IN HEADER ── */
+.day-progress-wrap {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.day-progress-bg {
+  flex: 1;
+  height: 4px;
+  background: var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.day-progress-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 4px;
+  width: 0%;
+  transition: width 0.3s ease, background 0.3s;
+}
+.day-progress-fill.full { background: var(--green); }
+.day-progress-pct {
+  font-size: 0.7rem;
+  color: var(--muted);
+  min-width: 32px;
+  text-align: right;
+}
+
+/* Push page content up so dock doesn't cover it */
+body { padding-bottom: 60px; }
+</style>
+
+<div id="progress-dock">
+  <span class="dock-label">TODAY'S PROGRESS</span>
+  <div class="day-pills" id="day-pills"><div class="day-pill" id="pill-0"><span class="pill-check">✓</span><span class="pill-label">Day 1 · Lower Body</span>&nbsp;<span class="pill-count" id="pillc-0">0/15</span></div><div class="day-pill" id="pill-1"><span class="pill-check">✓</span><span class="pill-label">Day 2 · Upper Body</span>&nbsp;<span class="pill-count" id="pillc-1">0/16</span></div><div class="day-pill" id="pill-2"><span class="pill-check">✓</span><span class="pill-label">Day 3 · Recovery</span>&nbsp;<span class="pill-count" id="pillc-2">0/13</span></div><div class="day-pill" id="pill-3"><span class="pill-check">✓</span><span class="pill-label">Day 4 · Power Day</span>&nbsp;<span class="pill-count" id="pillc-3">0/12</span></div><div class="day-pill" id="pill-4"><span class="pill-check">✓</span><span class="pill-label">Day 5 · Conditioning</span>&nbsp;<span class="pill-count" id="pillc-4">0/13</span></div></div>
+  <button id="reset-btn" onclick="resetAll()">Reset All</button>
+</div>
+
+<script>
+(function() {
+  const STORAGE_KEY = 'hockey_prog_v1';
+
+  // ── Load saved state ──
+  function loadState() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); }
+    catch(e) { return {}; }
+  }
+  function saveState(state) {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+    catch(e) {}
+  }
+
+  // ── Give every exrow inside dbody a unique ID and inject checkbox ──
+  const dayCards = document.querySelectorAll('.dcard');
+  let globalIdx = 0;
+
+  dayCards.forEach((card, dayIdx) => {
+    const rows = card.querySelectorAll('.dbody .exrow');
+    rows.forEach(row => {
+      const id = 'ex-' + globalIdx++;
+      row.dataset.exId = id;
+
+      // Inject circular checkbox at start of row
+      const check = document.createElement('div');
+      check.className = 'ex-check';
+      check.innerHTML = '<svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4L4.2 7.5L10 1" stroke="#060b17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+      row.insertBefore(check, row.firstChild);
+
+      // Click handler
+      row.addEventListener('click', function() {
+        const state = loadState();
+        if (row.classList.contains('done')) {
+          row.classList.remove('done');
+          delete state[id];
+        } else {
+          row.classList.add('done');
+          state[id] = 1;
+        }
+        saveState(state);
+        updateAllBars();
+      });
+    });
+  });
+
+  // ── Build progress bars inside each day card header ──
+  dayCards.forEach((card, dayIdx) => {
+    const hdr = card.querySelector('.dhdr');
+    const wrap = document.createElement('div');
+    wrap.className = 'day-progress-wrap';
+    wrap.innerHTML = '<div class="day-progress-bg"><div class="day-progress-fill" id="dpf-' + dayIdx + '"></div></div><span class="day-progress-pct" id="dpp-' + dayIdx + '">0%</span>';
+    hdr.appendChild(wrap);
+  });
+
+  // ── Build dock pills ──
+  const pillContainer = document.getElementById('day-pills');
+  dayCards.forEach((card, dayIdx) => {
+    const title = card.querySelector('.dhdr h3').textContent.split('—')[0].split('+')[0].trim();
+    const shortLabel = title.replace('Total Body Athletic Power', 'Power Day').replace('Hockey Metabolic Conditioning', 'Conditioning').replace('CNS Recovery', 'Recovery').replace('Lower Body Power', 'Lower Body').replace('Upper Body Strength', 'Upper Body');
+    const pill = document.createElement('div');
+    pill.className = 'day-pill';
+    pill.id = 'pill-' + dayIdx;
+    pill.innerHTML = '<span class="pill-check">✓</span><span class="pill-label">Day ' + (dayIdx+1) + ' · ' + shortLabel + '</span>&nbsp;<span class="pill-count" id="pillc-' + dayIdx + '">0/0</span>';
+    pill.addEventListener('click', () => {
+      card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+    pillContainer.appendChild(pill);
+  });
+
+  // ── Restore saved state ──
+  function restoreState() {
+    const state = loadState();
+    document.querySelectorAll('.exrow[data-ex-id]').forEach(row => {
+      if (state[row.dataset.exId]) row.classList.add('done');
+    });
+  }
+
+  // ── Update all progress bars and dock ──
+  function updateAllBars() {
+    dayCards.forEach((card, dayIdx) => {
+      const rows = card.querySelectorAll('.dbody .exrow[data-ex-id]');
+      const total = rows.length;
+      const done = card.querySelectorAll('.dbody .exrow.done').length;
+      const pct = total ? Math.round((done / total) * 100) : 0;
+
+      const fill = document.getElementById('dpf-' + dayIdx);
+      const label = document.getElementById('dpp-' + dayIdx);
+      const pillCount = document.getElementById('pillc-' + dayIdx);
+      const pill = document.getElementById('pill-' + dayIdx);
+
+      if (fill) { fill.style.width = pct + '%'; fill.classList.toggle('full', pct === 100); }
+      if (label) label.textContent = pct + '%';
+      if (pillCount) pillCount.textContent = done + '/' + total;
+      if (pill) pill.classList.toggle('day-complete', pct === 100);
+    });
+  }
+
+  // ── Reset all ──
+  window.resetAll = function() {
+    if (!confirm('Reset all progress? This cannot be undone.')) return;
+    saveState({});
+    document.querySelectorAll('.exrow.done').forEach(r => r.classList.remove('done'));
+    updateAllBars();
+  };
+
+  // ── Init ──
+  restoreState();
+  updateAllBars();
+})();
+</script>
+
+
+
+</body></html>
